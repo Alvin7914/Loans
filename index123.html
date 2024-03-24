@@ -3,14 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <title>Title</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="container">
@@ -23,5 +28,29 @@
         </ul>
       </nav>
     </header>
+    <main class="container">
+      <section class="intro__info">
+        <h2 class="mini-title">Personal Loan</h2>
+        <h1 class="title">Put your plans into action.</h1>
+        <div class="icons">
+            <div class="icon">Online application</div>
+            <div class="icon">Up to $50.000</div>
+            <div class="icon">The money is yours in 48h</div>
+          </div>
+        </div>
+      </section>
+      <section class="intro__form">
+        <h2 class="form__title">Let's change your life?</h2>
+        <form class="form">
+          <label class="full-name" for="full-name">Full name</label>
+          <input type="text" name="full-name" id="full-name" placeholder="John Doe"/>
+          <label for="e-mail" class="e-mail">E-mail</label>
+          <input type="email" name="e-mail" id="e-mail" placeholder="john.doe@apple.com" />
+          <label for="how-much" class="how-much">How much do you need?</label>
+          <input type="number" name="how-much" id="how-much" placeholder="1.000" />
+          <button class="form__button">Check your rates</button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
